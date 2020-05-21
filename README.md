@@ -1,4 +1,4 @@
-# ci-dns-creator-cloudflare
+# Codeiniter DNS Maker
 Simple Codeigniter DNS Creator Cloudflare PHP API
 # Installation
 Need:
@@ -7,7 +7,7 @@ Need:
 * Domain Name
 
 ```
-git clone https://github.com/rzengineer/ci-dns-creator-cloudflare.git
+git clone https://github.com/johndesu090/ci-dns-creator-cloudflare
 ```
 or download as a zip archive and upload/extract to your web server.
 # Edit this file application/controllers/Dns.php
@@ -27,6 +27,7 @@ if (!empty($this->input->post('name')) and !empty($this->input->post('content'))
 ```
 in the application/controllers/Dns.php change zone id to your cloudflare zone id , change Your Email to your email cloudflare, and change Your Global Api to your global api cloudflare. change defuza.xyz to your domain name.
 # Made Using
+* [MainRepo] (https://github.com/rizalkun/ci-dns-creator-cloudflare)
 * [Adminlte](https://github.com/almasaeed2010/AdminLTE)
 * [Cloudflare PHP API](https://github.com/jamesryanbell/cloudflare)
 # Reference
