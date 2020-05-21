@@ -25,12 +25,12 @@ class Dns extends CI_Controller {
 
 	public function index()
 	{
-		if (!empty($this->input->get('name')) and !empty($this->input->get('content'))) {
-				$name=$this->input->get('name');
-				$content=$this->input->get('content');
+		if (!empty($this->input->post('name')) and !empty($this->input->post('content'))) {
+				$name=$this->input->post('name');
+				$content=$this->input->post('content');
 				$zoneid = "d32277ecaaddc0da420885a0f85908c9";
 				$dns = new Cloudflare\Zone\Dns('exodia090@gmail.com', '60a16923235a0556c48b037fcd33b39a0d0dfy');
-				$response=$dns->create($zoneid, 'A', $this->input->get('name') . ".dnsford.ml", $this->input->get('content'), 1);
+				$response=$dns->create($zoneid, 'A', $this->input->post('name') . ".dnsford.ml", $this->input->post('content'), 1);
 			if ($response) {
 					echo "<div class='alert alert-success alert-dismissable'>Your hostname <b> $name.dnsford.ml</b> is now online!</div>";
 				}else{
