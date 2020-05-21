@@ -7,7 +7,7 @@ Need:
 * Domain Name
 
 ```
-git clone https://github.com/johndesu090/ci-dns-creator-cloudflare
+git clone https://github.com/johndesu090/ci-cdm.git
 ```
 or download as a zip archive and upload/extract to your web server.
 # Edit this file application/controllers/Dns.php
