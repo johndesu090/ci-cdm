@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Codeigniter DNS Creator Cloudflare</title>
+  <title>DNS Creator</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -40,17 +40,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Simple DNS Creator Codeigniter</h3>
+              <h3 class="box-title">JohnFordTV DNS Maker</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
             <form action="" method="post">
               <div class="box-body">
                 <div class="input-group">
-                  <input type="text" class="form-control" name="name" placeholder="example"><span class="input-group-addon">.defuza.xyz</span>
+                  <input type="text" class="form-control" name="name" placeholder="Host"><span class="input-group-addon">.dnsford.ml</span>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="content" placeholder="127.0.0.1">
+                  <input type="text" class="form-control" name="content" placeholder="IP Address">
                 </div>
               </div>
               <!-- /.box-body -->
