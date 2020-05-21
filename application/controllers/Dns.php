@@ -28,13 +28,13 @@ class Dns extends CI_Controller {
 		if (!empty($this->input->post('name')) and !empty($this->input->post('content'))) {
 				$name=$this->input->post('name');
 				$content=$this->input->post('content');
-				$zoneid = "Zone ID";
-				$dns = new Cloudflare\Zone\Dns('Your Email', 'Your Global API');
-				$response=$dns->create($zoneid, 'A', $this->input->post('name') . ".defuza.xyz", $this->input->post('content'), 1);
+				$zoneid = "d32277ecaaddc0da420885a0f85908c9";
+				$dns = new Cloudflare\Zone\Dns('exodia090@gmail.com', '60a16923235a0556c48b037fcd33b39a0d0dfy');
+				$response=$dns->create($zoneid, 'A', $this->input->post('name') . ".dnsford.ml", $this->input->post('content'), 1);
 			if ($response) {
-					echo "<div class='alert alert-success alert-dismissable'>Your hostname <b> $name.defuza.xyz</b> is now online!</div>";
+					echo "<div class='alert alert-success alert-dismissable'>Your hostname <b> $name.dnsford.ml</b> is now online!</div>";
 				}else{
-					echo "<div class='alert alert-danger alert-dismissable'>Your hostname <b>  $name.defuza.xyz</b> could not be created!</div>";
+					echo "<div class='alert alert-danger alert-dismissable'>Your hostname <b>  $name.dnsford.ml</b> could not be created!</div>";
 			}
 		} 
 		$this->load->view('dns');
